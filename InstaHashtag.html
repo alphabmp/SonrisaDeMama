@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Hastag Generator</h1>
+    <label for"maxTags">Max Number of HashTags: </label>
+    <input type="number" name="maxTags" id="maxTags" min="10" max="30" value="25"></input><br><br>
+    <p>
+      Selecciona que categorias de hashtag deseas utilizar, puedes seleccionar entre 1 y 5 categorias.
+    </p>
+    <label for="cat1">Categoria 1: </label><select name="cat1" id="cat1"></select><br>
+    <label for="cat2">Categoria 2: </label><select name="cat2" id="cat2"></select><br>
+    <label for="cat3">Categoria 3: </label><select name="cat3" id="cat3"></select><br>
+    <label for="cat4">Categoria 4: </label><select name="cat4" id="cat4"></select><br>
+    <label for="cat5">Categoria 5: </label><select name="cat5" id="cat5"></select><br><br>
+    <button onClick="generate()">Generate</button><br><br>
+    <textarea id="finalTags" name="finalTags" cols="100" rows="20"></textarea><br>
+    Hashtags: <span id="hashCount" name="hashCount"></span>
+    <script src="instaHashtag.js"></script>
+  </body>
+</html>
